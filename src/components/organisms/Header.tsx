@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Header = () => {
   return (
     <Sheader>
-      <Sh1>カーライブラリ</Sh1>
+      <Sh1>モーターネット</Sh1>
       <Snav>
         <Sul>
           <Sli>記事を投稿する</Sli>

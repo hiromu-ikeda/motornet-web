@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <>
             <Sfooter>
-                <Title>カーライブラリ</Title>
+                <Title>モーターネット</Title>
                 <CopyRight>CopyRight ©︎2022 YNot assoc. All Rights Reserved.</CopyRight>
             </Sfooter>
         </>
