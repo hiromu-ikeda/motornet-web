@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: #F2F2F2;
+  color: #4a4a4a;
+}
+
+*:focus {
+  outline: none;
+}
