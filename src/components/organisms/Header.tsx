@@ -7,7 +7,7 @@ export const Header = () => {
       <Snav>
         <Sul>
           <Sli>記事を投稿する</Sli>
-          <Sli>ゲスト</Sli>
+          <Sli>ログイン</Sli>
         </Sul>
       </Snav>
     </Sheader>
