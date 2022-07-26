@@ -1,21 +1,23 @@
 import styled from "styled-components";
-import { Header } from "../components/organisms/Header";
 import { SearchBox } from "../components/molecules/Search";
-import { Footer } from "../components/organisms/Footer";
+import { Button } from "../components/atoms/Buttons";
 
 export const Top = () => {
     return (
         <>
-            <Header />
             <div><Simg src={`${process.env.PUBLIC_URL}/images/topImg.png`} /></div>
             <Smain>
                 <SearchCar>
                     <Title>車を探す</Title>
                     <SearchBox />
+                    <Button text="メーカーから探す"/>
+                    <Button text="50音順で探す"/>
                 </SearchCar>
                 <SeeArticle>
                     <Title>記事を見る</Title>
                     <SearchBox />
+                    <Button text="最新の記事"/>
+                    <Button text="人気の記事"/>
                 </SeeArticle>
                 <Discription>
                     <Sh2>モーターネットとは</Sh2>
@@ -39,7 +41,6 @@ export const Top = () => {
                     </p>
                 </Discription>
             </Smain>
-            <Footer />
        </>
     )
 }
