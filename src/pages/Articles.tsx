@@ -1,5 +1,5 @@
 import axios from "axios"
-import { useEffect, useState } from "react";
+import { Article } from "../components/molecules/Article";
 
 export const Articles = () => {
   const GetArticles = async () => {
@@ -9,8 +9,9 @@ export const Articles = () => {
   return (
     
     <>
-      <div>記事を表示します</div>
-      <button onClick={GetArticles}>APIを叩きます</button>
+      <div>
+        <Article />
+      </div>
     </>
   )
 }

@@ -16,6 +16,7 @@ const Sfooter = styled.footer`
     display: flex;
     justify-content: space-between;
     background-color: #FF3C3C;
+    font-weight: bold;
 `;
 
 const Title = styled.div`

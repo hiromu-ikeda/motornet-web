@@ -10,14 +10,14 @@ export const Top = () => {
                 <SearchCar>
                     <Title>車を探す</Title>
                     <SearchBox />
-                    <Button text="メーカーから探す"/>
-                    <Button text="50音順で探す"/>
+                    <Button text="メーカーから探す" href=""/><br/>
+                    <Button text="50音順で探す" href=""/>
                 </SearchCar>
                 <SeeArticle>
                     <Title>記事を見る</Title>
                     <SearchBox />
-                    <Button text="最新の記事"/>
-                    <Button text="人気の記事"/>
+                    <Button text="最新の記事" href="/articles"/><br/>
+                    <Button text="人気の記事" href="/articles"/>
                 </SeeArticle>
                 <Discription>
                     <Sh2>モーターネットとは</Sh2>
@@ -69,12 +69,14 @@ const SearchCar = styled.div`
     grid-column: 2;
     grid-row: 2;
     background-color: #fff;
+    text-align: center;
 `;
 
 const SeeArticle = styled.div`
     grid-column: 4;
     grid-row: 2;
     background-color: #fff;
+    text-align: center;
 `;
 
 const Discription = styled.div`

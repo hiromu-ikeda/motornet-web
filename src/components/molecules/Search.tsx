@@ -6,7 +6,7 @@ export const SearchBox = () => {
         <>
             <Sdiv className="searchBox">
                 <Sinput className="searchInput" type="text" placeholder="車名を入力" />
-                <SearchButton />
+                <SearchButton href="" />
             </Sdiv>   
         </>
     )
@@ -19,6 +19,7 @@ const Sinput = styled.input`
     border: none;
     border-bottom: 1px solid #707070;
     height: 32px;
+    margin: 10px;
 `;
 
 const Sdiv = styled.div`
