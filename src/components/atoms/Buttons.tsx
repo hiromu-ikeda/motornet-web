@@ -24,7 +24,7 @@ export const Button = (props: ButtonType) => {
 
 export const NoRadiusButton = (props: ButtonType) => {
     return (
-        <Sbutton to={props.href}>{props.text}</Sbutton>
+        <SnoRadiusbutton to={props.href}>{props.text}</SnoRadiusbutton>
     )
 }
 
@@ -47,6 +47,18 @@ const Sbutton = styled(Link)`
     font-size: 20px;
     display: block;
     margin: 0 auto 30px auto;
+    text-decoration: none;
+    display: inline-block;
+`
+
+const SnoRadiusbutton = styled(Link)`
+    border: none;
+    padding: 10px 50px;
+    margin: 0 13px;
+    color: #fff;
+    background-color: #FF3C3C;
+    font-size: 20px;
+    display: block;
     text-decoration: none;
     display: inline-block;
 `

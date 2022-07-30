@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import { HotTopics } from "../molecules/HotTopics"
 
 export const Sidebar = () => {
     return (
         <>
             <Saside>
-                aaa
+                <HotTopics />
             </Saside>
         </>
     )
@@ -12,4 +13,9 @@ export const Sidebar = () => {
 
 const Saside = styled.aside`
     background-color: #fff;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    grid-column: 2;
 `
+
+
