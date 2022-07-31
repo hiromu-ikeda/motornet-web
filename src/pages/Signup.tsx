@@ -2,7 +2,8 @@ import { useState } from "react"
 import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import styled from "styled-components";
-import { Button } from "../components/atoms/Buttons";
+import { SubmitButton } from "../components/atoms/Buttons";
+import { Link } from "react-router-dom";
 
 export const Signup = () => {
   const [email, setEmail] = useState('');
@@ -10,6 +11,7 @@ export const Signup = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
+      console.log(email, password)
       await createUserWithEmailAndPassword(
         auth,
         email,
@@ -31,8 +33,13 @@ export const Signup = () => {
           <Spassword>パスワード</Spassword>
           <Sinput name="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}></Sinput>
         </Sdiv>
-        <Button text="登録する" href=""/>
+
+        <SubmitButton text="登録する"/>
       </Sform>
+      <ToLogin>
+        <p>すでに登録済みですか？</p>
+        <Link to="/login">ログイン画面へ</Link><br />
+      </ToLogin>
     </>
   )
 }
@@ -51,6 +58,10 @@ const Stitle = styled.div`
 
 const Sdiv = styled.div`
   margin-bottom: 60px;
+`
+
+const ToLogin = styled.div`
+  text-align: center;
 `
 
 const Semail = styled.label`

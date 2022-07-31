@@ -35,11 +35,6 @@ const Stitle = styled.div`
     margin-bottom: 44px;
 `
 
-const Sstar = styled(FaRegStar)`
-    width: 32px;
-    height: 32px;
-`
-
 const Sfavorite = styled.div`
     display: flex;
     font-size: 24px;

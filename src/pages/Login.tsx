@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 import { Button } from "../components/atoms/Buttons"
 
@@ -16,6 +17,10 @@ export const Login = () => {
         </Sdiv>
         <Button text="ログインする" href=""/>
       </Sform>
+      <ToSignup>
+        <p>まだ登録されていませんか？</p>
+        <Link to="/signup">登録画面へ</Link><br />
+      </ToSignup>
     </>
   )
 }
@@ -50,4 +55,8 @@ const Sinput = styled.input`
   height: 32px;
   width: 254px;
   background-color: #F2F2F2;
+`
+
+const ToSignup = styled.div`
+  text-align: center;
 `
